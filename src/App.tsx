@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { VRCanvas, Interactive, DefaultXRControllers } from "@react-three/xr";
+import { VRCanvas, Interactive, DefaultXRControllers, Hands } from "@react-three/xr";
 import { Sky, Text } from "@react-three/drei";
 import "@react-three/fiber";
 
@@ -65,6 +65,7 @@ function App() {
       <pointLight position={[10, 10, 10]} />
       <DefaultXRControllers />
       <Button position={[0, 0.8, -1]} />
+      <Hands />
     </VRCanvas>
   );
 }
