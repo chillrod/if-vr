@@ -77,8 +77,14 @@ function App() {
         <Model position={[0, 0, -25]} />
         <Model2 position={[10, 0, -40]} />
       </Suspense>
-      <Image scale={1} transparent url="./if.jpeg" opacity={1} />
-      <Button />
+      <Image
+        position={[0, 0.8, -15]}
+        scale={1}
+        transparent
+        url="./if.jpeg"
+        opacity={1}
+      />
+      <Button position={[0, 0.8, -1]} />
       <DefaultXRControllers />
     </VRCanvas>
   );
